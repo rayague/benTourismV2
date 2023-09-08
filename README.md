@@ -20,3 +20,12 @@
 - Node.js and npm installed on your development machine.
 - Expo CLI (if you're using Expo for React Native development).
 - A working Android or iOS emulator or a physical device for testing.
+
+## Usage
+- Register or log in to the app.
+- Explore different tourist destinations.
+- View destination details, reviews, and images.
+- Plan your trip by creating itineraries.
+- Use the map feature to navigate to your chosen destinations.
+- Check the real-time weather for your travel locations.
+- Share your experiences and leave reviews for other users.
