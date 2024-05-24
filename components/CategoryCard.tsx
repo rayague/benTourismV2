@@ -1,6 +1,6 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+// import {Ionicons} from '@expo/vector-icons';
 
 type Category = {
   name: string;
@@ -9,26 +9,22 @@ type Category = {
 };
 
 const categories: Category[] = [
-  { name: 'Acc Repair', icon: 'md-build', color: '#ffbc99' },
-  { name: 'Beauty', icon: 'md-cut', color: '#cabdff' },
-  { name: 'Appliance', icon: 'md-laptop', color: '#b1e5fc' },
-  { name: 'See All', icon: 'arrow-forward', color: '#ececec' },
+  {name: 'Acc Repair', icon: 'md-build', color: '#ffbc99'},
+  {name: 'Beauty', icon: 'md-cut', color: '#cabdff'},
+  {name: 'Appliance', icon: 'md-laptop', color: '#b1e5fc'},
+  {name: 'See All', icon: 'arrow-forward', color: '#ececec'},
 ];
 
 const CategoryCard = () => {
-  const renderCategory = ({ name, icon, color }: Category) => (
+  const renderCategory = ({name, icon, color}: Category) => (
     <View key={name}>
-      <TouchableOpacity style={[styles.category, { backgroundColor: color }]}>
-      </TouchableOpacity>
+      <TouchableOpacity
+        style={[styles.category, {backgroundColor: color}]}></TouchableOpacity>
       <Text style={styles.categoryTitle}>{name}</Text>
     </View>
   );
 
-  return (
-    <View style={styles.container}>
-      {categories.map(renderCategory)}
-    </View>
-  );
+  return <View style={styles.container}>{categories.map(renderCategory)}</View>;
 };
 
 const styles = StyleSheet.create({
